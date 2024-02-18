@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CG</title>
+    <script src="aframe.min.js"></script>
+    
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img src="img/zz.jpg" id="Z" alt="">
+            <img src="img/Milo.jpg" id="Milo" alt="">
+            <img src="img/Peak milk.jpg" id="Peak" alt="">
+            <img src="img/pn.png" id="Pn" alt="">
+            <img src="img/unnamed.jpg" id="Una" alt="">
+            <img src="Textures/Wood.jpg" id="Wood">
+            <img src="Textures/pexels-pixabay-268966.jpg" id="road">
+            <img src="Textures/A-FrameResources/textures/360/texturify_pano-1-4.jpg" id="pano">
+            <img src="Textures/Sand.jpg" id="sand">
+            <img src="Textures/sea2.jpg" id="sea">
+            <img src="img/road.jpg" id="road">
+            
+        </a-assets>
+        
+        <a-sky src="Textures/A-FrameResources/textures/clear-sunny-sky.jpg"></a-sky>
+
+        <a-plane material="color:light-brown;
+                            src:#sand;
+                            repeat:250 250"
+        rotation="-90 0 90"
+        position="0 -15 -70"
+        scale="500 500 1"
+        ></a-plane>
+        
+        
+        <!--SUMMER HUT PILLAR-->
+        <a-cylinder color="#333" radius="0.4" height="45.5" position="0 0 -70"></a-cylinder>
+
+        <a-cylinder src="#Wood" color="crimson" radius="11" height="0.5" position="0 -2.2 -70" segments-radial="10"></a-cylinder>
+
+        <a-box src="#road" height="3" width="4" position="0 -12 -70" depth="2.5"></a-box>
+
+        <a-cone src="#sea" color="cyan" radius-bottom="21" height="11" position="0 18 -70" segments-radial="10" repeat="5 1" open-ended="true" side="double"></a-cone>
+
+        <!--TILES-->
+        <a-box src="#road" color="orange" width="55" height="40" position="0 -14 -70" depth="0.6" rotation="90 0 0" repeat="2 2"></a-box>
+        <a-box src="#road" color="orange" width="15" height="14" position="0 -14 -43" depth="0.6" rotation="90 0 0"></a-box>
+        <a-box src="#road" color="orange" width="15" height="14" position="0 -14 -29" depth="0.6" rotation="90 0 0"></a-box>
+        <a-box src=#road color="orange" width="15" height="14" position="0 -14 -15" depth="0.6" rotation="90 0 0"></a-box>
+
+        <a-box src="#road" color="orange" width="15" height="14" position="0 -14 -1" depth="0.6" rotation="90 0 0"></a-box>
+        <a-box src="#road" color="orange" width="15" height="14" position="0 -14 13" depth="0.6" rotation="90 0 0"></a-box>
+        <a-box src=#road color="orange" width="15" height="14" position="0 -14 27" depth="0.6" rotation="90 0 0"></a-box>
+
+
+
+
+        <!--tins-->
+        <a-cylinder src="#Milo" radius="0.85" height="2.5" position="4 -1 -69" segments-radial="400"></a-cylinder>
+        <a-cylinder src="#Peak" radius="0.8" height="2.5" position="3 -1 -72" segments-radial="400"></a-cylinder>
+
+        <!--cups-->
+        <a-cylinder src="#Pn"  radius="0.8" height="1.5" position="-4 -1 -62" segments-radial="400" open-ended="True" side="double" repeat="2 2"></a-cylinder>
+        <a-cylinder src="#Una"  color="white " radius="0.8" height="1.5" position="-2 -1 -65" segments-radial="400" open-ended="True" side="double" open-side="double" repeat="2 2"></a-cylinder>
+        
+        <a-cylinder src="#Pn" radius="0.78" color="cyan" height="0.1" position="-4 -1.45 -62" repeat="2 2"></a-cylinder>
+
+        <a-cylinder src="#Una" radius="0.78" color="cyan" height="0.1" position="-2 -1.45 -65" repeat="2 2"></a-cylinder>
+
+
+        <!--The chairs-->
+        <a-box height="1" width="5" depth="18" color="red" position="-12 -9.5 -63" rotation="0 -130 0"></a-box>
+        <a-box height="1" width="5" depth="18" color="pink" position="11 -9.5 -78" rotation="0 -130 0"></a-box>
+
+        <!--Top part of chair-->
+        <a-box height="1" width="5" depth="18" color="purple" position="-13.72 -6.6 -61.1" rotation="0 -130 -105"></a-box>
+        <a-box height="1" width="5" depth="18" color="crimson" position="12.6 -6.6 -79.9" rotation="0 -130 105"></a-box>
+        
+
+        <!--Legs of the chair-->
+        <a-box color="white" height="4.0" width="5" depth="1" color="red" position="-17 -12 -67.11" rotation="0 -130 0"></a-box>
+        <a-box color="black" height="4.0" width="5" depth="1" color="red" position="-7.2 -12 -59" rotation="0 -130 0"></a-box>
+
+        <!--second chair-->
+        <a-box height="4.0" width="5" depth="1" color="green" position="6.5 -12 -81.5" rotation="0 -130 0"></a-box>
+        <a-box color="black" height="4.0" width="5" depth="1" color="red" position="15 -12 -74.5" rotation="0 -130 0"></a-box>
+
+        <!--wall-->
+        <a-box src="#road"  height="25" width="50" depth="1" position="-50 -2 -85 " rotation="0 35 0" "></a-box>
+        <a-box src="#road"  height="25" width="50" depth="1" position="50 -2 -85 " rotation="0 -35 0" "></a-box>
+        <a-box src="#road"  height="25" width="59.5" depth="1" position="0 -2 -99 " rotation="0 0 0" "></a-box>
+
+        <a-box src="#road"  height="25" width="60" depth="1" position="-70 -2 -40 " rotation="0 90 0"></a-box>
+        <a-box src="#road"  height="25" width="60" depth="1" position="70 -2 -40 " rotation="0 90 0"></a-box>
+        <a-box src="#road"  height="25" width="60" depth="1" position="70 -2 20 " rotation="0 90 0"></a-box>
+        <a-box src="#road"  height="25" width="60" depth="1" position="-70 -2 20 " rotation="0 90 0"></a-box>
+
+        <a-box src="#road"  height="25" width="60" depth="1" position="-40 -14 50 " rotation="0 0 0"></a-box>
+        <a-box src="#road"  height="25" width="60" depth="1" position="40 -14 50 " rotation="0 0 0"></a-box>
+        
+        
+        
+
+
+    </a-scene>
+   
+
+    
+</body>
+</html>

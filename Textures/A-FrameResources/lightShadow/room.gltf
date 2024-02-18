@@ -1,0 +1,145 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0, 
+            "componentType" : 5121, 
+            "count" : 66, 
+            "max" : [
+                41
+            ], 
+            "min" : [
+                0
+            ], 
+            "type" : "SCALAR"
+        }, 
+        {
+            "bufferView" : 1, 
+            "componentType" : 5126, 
+            "count" : 42, 
+            "max" : [
+                1.0, 
+                1.0555555820465088, 
+                3.000000238418579
+            ], 
+            "min" : [
+                -1.0, 
+                -1.0444444417953491, 
+                -1.000000238418579
+            ], 
+            "type" : "VEC3"
+        }, 
+        {
+            "bufferView" : 2, 
+            "componentType" : 5126, 
+            "count" : 42, 
+            "max" : [
+                1.0, 
+                1.0, 
+                1.0
+            ], 
+            "min" : [
+                -1.0, 
+                -0.9999999403953552, 
+                -1.0
+            ], 
+            "type" : "VEC3"
+        }
+    ], 
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter", 
+        "version" : "2.0"
+    }, 
+    "bufferViews" : [
+        {
+            "buffer" : 0, 
+            "byteLength" : 66, 
+            "byteOffset" : 0, 
+            "target" : 34963
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 504, 
+            "byteOffset" : 68, 
+            "target" : 34962
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 504, 
+            "byteOffset" : 572, 
+            "target" : 34962
+        }
+    ], 
+    "buffers" : [
+        {
+            "byteLength" : 1076, 
+            "uri" : "room.bin"
+        }
+    ], 
+    "extensionsRequired" : [
+        "KHR_materials_pbrSpecularGlossiness"
+    ], 
+    "extensionsUsed" : [
+        "KHR_materials_pbrSpecularGlossiness"
+    ], 
+    "materials" : [
+        {
+            "extensions" : {
+                "KHR_materials_pbrSpecularGlossiness" : {
+                    "diffuseFactor" : [
+                        0.05400000140070915, 
+                        0.3762621283531189, 
+                        0.913098931312561, 
+                        1.0
+                    ], 
+                    "glossinessFactor" : 0.5, 
+                    "specularFactor" : [
+                        0.18782080709934235, 
+                        0.18782080709934235, 
+                        0.18782080709934235
+                    ]
+                }
+            }, 
+            "name" : "Material.002"
+        }
+    ], 
+    "meshes" : [
+        {
+            "name" : "Cube.001", 
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2, 
+                        "POSITION" : 1
+                    }, 
+                    "indices" : 0, 
+                    "material" : 0
+                }
+            ]
+        }
+    ], 
+    "nodes" : [
+        {
+            "mesh" : 0, 
+            "name" : "Cube.001", 
+            "scale" : [
+                2.0, 
+                2.25, 
+                3.5
+            ], 
+            "translation" : [
+                -2.0, 
+                2.25, 
+                0.5
+            ]
+        }
+    ], 
+    "scene" : 0, 
+    "scenes" : [
+        {
+            "name" : "Scene", 
+            "nodes" : [
+                0
+            ]
+        }
+    ]
+}
